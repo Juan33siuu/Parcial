@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Parcial</title>
+	<style>
+.grande{
+	position: absolute;
+	top: 40px;
+	left: 100px;
+	width: 1150px;
+	height: 550px;
+	background: blue;
+}
+.play{
+	position: absolute;
+	top: 70px;
+	left: 1070px;
+	background: orange;
+	height: 130px;
+	width: 150px;
+	border-radius: 100px;
+
+}
+.tema1{
+	position: absolute;
+	top: 70px;
+	left: 150px;
+	background: orange;
+	height: 120px;
+	width: 120px;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+
+}
+.mediano1{
+	position: absolute;
+	top: 100px;
+	left: 320px;
+	width: 0px;
+	height: 430px;
+	background: lightgreen;
+	font-family: Comic Sans MS;
+	font-size: 30px;
+	transition: all 2s;
+}
+.texto1{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	font-size: 25px;
+	display: none;
+	transition: all 2s;
+}
+.cerrar1{
+	position: absolute;
+	top: 370px;
+	left: 500px;
+	background: green;
+	width: 93px;
+	height: 46px;
+	display: none;
+}
+.tema2{
+	position: absolute;
+	top: 450px;
+	left: 1080px;
+	background: orange;
+	height: 120px;
+	width: 120px;
+	font-family: Comic Sans MS;
+	font-size: 20px;
+
+}
+.mediano2{
+	position: absolute;
+	top: 100px;
+	left: 320px;
+	width: 0px;
+	height: 430px;
+	background: lightgreen;
+	font-family: Comic Sans MS;
+	font-size: 30px;
+	transition: all 2s;
+}
+.texto2{
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	font-size: 25px;
+	display: none;
+	transition: all 2s;
+}
+.cerrar2{
+	position: absolute;
+	top: 370px;
+	left: 500px;
+	background: green;
+	display: none;
+}
+.img{
+	position: absolute;
+	top: 180px;
+	left: 330px;
+	display: none;
+}
+.img2{
+	position: absolute;
+	top: 180px;
+	left: 330px;
+	display: none;
+}
+	
+	</style>
+</head>
+<body bgcolor="grey">
+	<div class="grande"></div>
+	<div class="play" onclick="document.getElementById('audi').play()"><br>
+		<center><img src="play.png"></center>
+	</div>
+	<audio src="audi.wav" id="audi" loop></audio>
+	<div class="tema1" onclick="document.getElementById('medi1').style.width='650px', document.getElementById('tex1').style.display='block', document.getElementById('cerra1').style.display='block', document.getElementById('m1').style.display='block'"><br><br><center>Tema 1</center></div>
+	<div class="tema2" onclick="document.getElementById('medi2').style.width='650px', document.getElementById('tex2').style.display='block', document.getElementById('cerra2').style.display='block', document.getElementById('m2').style.display='block'"><br><br><center>Tema 2</center></div>
+	<div class="mediano1" id="medi1"><center></center>
+		<div class="cerrar1" id="cerra1" onclick="document.getElementById('medi1').style.display='none'">Cerrar</div>
+		<div class="texto1" id="tex1"><br>El fútbol o futbol​ ​ es un<br><br>deporte de equipo jugado<br><br>entre dos conjuntos de<br><br>once jugadores cada uno<br><br>Se trata de hacer goles</div>
+		<div class="img" id="m1"><img src="img1.png"></div>
+	</div>
+	<div class="mediano2" id="medi2"><center></center>
+		<div class="cerrar2" id="cerra2" onclick="document.getElementById('medi2').style.display='none'"><center>Cerrar</center></div>
+		<div class="texto2" id="tex2"><br>El Básket o basquet es un<br><br>deporte de equipo jugado<br><br>entre dos conjuntos de<br><br>cinco jugadores cada uno<br><br>Se trata de hacer canastas</div>
+		<div class="img2" id="m2"><img src="img2.png"></div>
+	</div>
+
+</body>
+</html>
